@@ -21,7 +21,15 @@ set_cursor_pos:
     mov bh , 0
     int 0x10
     ret
-    
+
+;OUTPUT DH = row and Dl = col
+get_cursor_pos:
+    mov aH,03h
+    mov bh , 0
+    int 0x10
+    mov al,DH	
+    ret
+
 set_graphic_mode:
     mov ah , 00h
     mov al , 13h
