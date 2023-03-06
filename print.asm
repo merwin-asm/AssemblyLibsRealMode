@@ -9,3 +9,8 @@ print_string:
      jne print_string
      ret
 
+;pass the chr in al
+print_chr:
+     mov ah, 0x0e    ; function number = 0Eh : Display Character
+     int 0x10        ; call INT 10h, BIOS video service
+     ret
