@@ -36,10 +36,11 @@ set_graphic_mode:
     int 10h
     ret
 
+; al color
+; CX  x
+; DX  y
 write_pixel:
     mov AH , 0Ch    
     mov AL , 0fh
     mov bh , 0x00
-    mov CX  , 0ah 
-    mov DX , 0ah
     int 10h
