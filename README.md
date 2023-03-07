@@ -1,5 +1,5 @@
 # AssemblyLibs
-Assembly Code Snippets || Lib || Nasm
+Assembly Code || Libs || For Nasm
 
 
  - Uses Interrupts : )
